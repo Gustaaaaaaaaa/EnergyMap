@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+.navbar {
+  background: #0047ab;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navbar a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+.navbar a:hover {
+  background: rgba(255,255,255,0.2);
+}
+.navbar a.active {
+  background: rgba(255,255,255,0.3);
+}
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card h2 {
+  margin: 0.75rem 1rem 0.5rem;
+  font-size: 1.25rem;
+}
+.card p {
+  margin: 0 1rem 1rem;
+  line-height: 1.4;
+}
